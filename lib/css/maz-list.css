@@ -1,0 +1,1 @@
+.maz-list{display:flex;flex-direction:column;border-radius:8px;margin-left:-1px;margin-right:-1px;max-width:100%}.maz-list:not(.no-scroll){overflow-y:auto;overflow-x:hidden}.maz-list:not(.maz-no-shadow){box-shadow:0 0 8px 0 rgba(0,0,0,0.1)}.maz-list.maz-no-shadow{border:2px solid #F2F2F2}.maz-is-dark .maz-list,.maz-is-dark.maz-list{background-color:#21222E;border-color:#2E2F40}

@@ -1,0 +1,35 @@
+.pagination-arrow-btn {
+  background-color: transparent;
+  margin-right: 10px;
+  color: $text-color;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &:disabled {
+    cursor: unset;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: darken(white, 20%);
+  }
+
+  &.maz-btn::before {
+    border-color: darken(white, 20%);
+  }
+}
+
+.maz-is-dark .pagination-arrow-btn {
+  color: $text-color-dark;
+
+  &:hover,
+  &:focus {
+    background-color: lighten($hover-bg-color-dark, 10%);
+  }
+
+  &.maz-btn::before {
+    border-color: lighten($hover-bg-color-dark, 10%);
+  }
+}

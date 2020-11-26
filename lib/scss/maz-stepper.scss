@@ -1,0 +1,49 @@
+@import './style-helpers/variables/index.scss';
+
+.maz-stepper {
+  &__step {
+    padding: 0;
+
+    &--dot {
+      border-radius: 50%;
+
+      &::before {
+        border-radius: 50% !important;
+      }
+    }
+
+    &--square {
+      border-radius: calc(1em / 3);
+
+      &.maz-btn::before {
+        border-radius: calc((1em / 3) + 2px);
+      }
+    }
+
+    &:not(.is-active) {
+      background-color: $bg-color-light;
+      color: darken($bg-color-light, 40%);
+
+      &:hover,
+      &:focus {
+        background-color: darken($bg-color-light, 10%);
+      }
+    }
+
+    &.is-active {
+      .maz-stepper__step__number {
+        color: white;
+      }
+    }
+  }
+}
+
+.maz-is-dark.maz-stepper,
+.maz-is-dark .maz-stepper {
+  &__step {
+    &:not(.is-active) {
+      background-color: $bg-color-dark-light;
+      color: lighten($bg-color-dark-light, 40%);
+    }
+  }
+}

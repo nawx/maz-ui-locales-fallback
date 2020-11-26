@@ -1,0 +1,15 @@
+@import './style-helpers/variables/index.scss';
+
+.maz-read-more {
+  p {
+    text-align: justify;
+    margin-bottom: 0;
+    white-space: pre-line;
+  }
+
+  a {
+    color: $primary-color;
+    font-size: .857rem;
+    font-weight: 500;
+  }
+}

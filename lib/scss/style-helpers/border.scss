@@ -1,0 +1,82 @@
+@import './variables/sizes';
+@import './variables/positions';
+@import './variables/borders';
+@import './variables/color_types';
+@import './variables/states';
+
+.#{$prefix}border-color {
+  border-color: $border-color;
+}
+
+@each $state, $color in $states {
+  .#{$prefix}border-color-#{$state}:#{$state} {
+    border-color: darken($border-color, 10%);
+  }
+}
+
+.#{$prefix}is-dark.#{$prefix}border-color,
+.#{$prefix}is-dark .#{$prefix}border-color {
+  border-color: $border-color-dark;
+}
+
+.#{$prefix}is-dark.#{$prefix}border-color-hover:hover,
+.#{$prefix}is-dark .#{$prefix}border-color-hover:hover {
+  border-color: lighten($border-color-dark, 10%);
+}
+
+.#{$prefix}no-border {
+  border: none;
+}
+
+.#{$prefix}border-color-dark {
+  border-color: $border-color-dark;
+}
+
+@each $state, $color in $states {
+  .#{$prefix}border-color-dark-#{$state}:#{$state} {
+    border-color: darken($border-color, 10%);
+    border-color: darken($border-color-dark, 10%);
+  }
+}
+
+@each $name, $color in $color_types {
+  @if (type-of($color) == 'color') {
+    .#{$prefix}border-#{$name} {
+      border-color: $color;
+    }
+  }
+}
+
+@each $style in $border-styles {
+  .#{$prefix}border-#{$style} {
+    border-style: #{$style};
+  }
+
+  @each $position in $orientations {
+    .#{$prefix}border-#{$position}-#{$style} {
+      border-#{$position}-style: #{$style};
+    }
+  }
+}
+
+@each $size in $sizes {
+  .#{$prefix}border-#{$size} {
+    border-width: #{$size}px;
+  }
+
+  @each $position in $orientations {
+    .#{$prefix}border-#{$position}-#{$size} {
+      border-#{$position}-width: #{$size}px;
+    }
+  }
+}
+
+.#{$prefix}border {
+  border-width: $border-width;
+}
+
+@each $position in $orientations {
+  .#{$prefix}border-#{$position} {
+    border-#{$position}-width: #{$border-width};
+  }
+}

@@ -1,0 +1,15 @@
+
+.pagination-dots-divider {
+  color: $text-color;
+  user-select: none;
+  height: 35px;
+  width: 35px;
+  margin-right: 10px;
+}
+
+.maz-is-dark,
+.maz-pagination.maz-is-dark {
+  .pagination-dots-divider {
+    color: white;
+  }
+}
