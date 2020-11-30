@@ -1,28 +1,4 @@
 {
-  "_from": "maz-ui",
-  "_id": "maz-ui@1.5.10",
-  "_inBundle": false,
-  "_integrity": "sha512-NngG27N94EUyPQFer371jxNPNFfL3o5c+JwK0XFCdBP9ft0wTZBrw9bAh7uYDpz+tXWKreKzFFojZVWCbCIoRA==",
-  "_location": "/maz-ui",
-  "_phantomChildren": {},
-  "_requested": {
-    "type": "tag",
-    "registry": true,
-    "raw": "maz-ui",
-    "name": "maz-ui",
-    "escapedName": "maz-ui",
-    "rawSpec": "",
-    "saveSpec": null,
-    "fetchSpec": "latest"
-  },
-  "_requiredBy": [
-    "#USER",
-    "/"
-  ],
-  "_resolved": "https://registry.npmjs.org/maz-ui/-/maz-ui-1.5.10.tgz",
-  "_shasum": "97b0ece772dd0e285c292972b32210694337e92e",
-  "_spec": "maz-ui",
-  "_where": "P:\\tripeningwidget",
   "author": {
     "name": "Louis Mazel",
     "email": "me@loicmazuel.com"
